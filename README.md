@@ -17,4 +17,4 @@ The structure of the application is as follows:
             Plan Your Trip
             Redirect to Google Maps
         Translate(Redirect to google Translate)
-        Logout
+        Logout.
