@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "385500028878",
+    "project_id": "yatrikatravel-d7dea",
+    "storage_bucket": "yatrikatravel-d7dea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385500028878:android:4355ccf77c84c47a68959f",
+        "android_client_info": {
+          "package_name": "com.example.yatrika_travel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385500028878-2igovqii2pgot2v70b4f5jcov00hpg16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUDkZPt1hqDNka3NSOEIgPbl_j8aIufTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385500028878-2igovqii2pgot2v70b4f5jcov00hpg16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

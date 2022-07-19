@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="LoginProcess.PuneHistoricals"
+    android:layout_margin="5dp"
+    android:background="@drawable/sky_image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simple_back_icon"
+            app:tint="@color/black"
+            android:onClick="openPlaceSelectorP"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Here are some historical places in Pune.."
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/sinhagad_butn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sky_image"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="Sinhagad Fort"
+                android:textColor="@color/purple_500"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/shanivar_butn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sky_image"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="Shanivar Wada"
+                android:textColor="@color/purple_500"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/agaKhanPalace_butn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sky_image"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="AgaKhan Palace"
+                android:textColor="@color/purple_500"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

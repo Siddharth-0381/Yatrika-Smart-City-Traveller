@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ForgetPasswordProcess.FetchEmail"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/first_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simple_back_icon"
+            android:layout_marginLeft="15dp"
+            app:tint="@color/black"
+            android:onClick="openLoginScreen"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/simple_lock_icon"
+            app:tint="@color/black"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:layout_gravity="center"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fetchphonemsg"
+            android:textSize="25dp"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showNameCode="true"
+            app:ccp_showFullName="true"
+            android:background="@drawable/black_border"
+            app:ccpDialog_textColor="@color/white"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/phoneNumber"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/simple_phonenumber_icon"
+            app:startIconTint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:textColor="@color/black"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:background="@color/primary_color"
+            android:text="@string/submit_button"
+            android:onClick="openOtppage"/>
+    </LinearLayout>
+</ScrollView>

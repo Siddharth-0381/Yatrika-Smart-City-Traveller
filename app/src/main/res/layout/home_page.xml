@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/travel_image"
+    android:orientation="vertical"
+    tools:context="LoginProcess.HomePage"
+    android:layout_margin="5dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:onClick="openLoginScreen"
+                android:src="@drawable/simple_logout_screen"
+                app:tint="@color/black" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:fontFamily="@font/amaranth"
+                android:text="Hello,"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/amaranth"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70dp"
+            android:fontFamily="@font/amaranth"
+            android:layout_marginTop="10dp"
+            android:text="Welcome to Yatrica,\nEnjoy you travel!!!"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_border"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/plan_trip_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#37FFFFFF"
+                android:src="@drawable/plan_a_trip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plan_trip_image"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/amaranth"
+                android:gravity="center"
+                android:background="#37FFFFFF"
+                android:text="Plan A Trip"
+                android:textColor="@color/black"
+                android:letterSpacing="0.5"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/plan_a_trip_btn"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#00000000" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/black_border"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/translator"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#37FFFFFF"
+                android:src="@drawable/simple_translator_image"
+                app:tint="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/translator"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/amaranth"
+                android:gravity="center"
+                android:background="#37FFFFFF"
+                android:text="Translate"
+                android:textColor="@color/black"
+                android:letterSpacing="0.5"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/translator_btn"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#00000000"
+                android:onClick="openTranslator"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="LoginProcess.PuneAmusement"
+    android:background="@drawable/sky_image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simple_back_icon"
+            app:tint="@color/black"
+            android:onClick="openPlaceSelectorP"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Here are some amusement parks and malls in Pune.."
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/phoenix_butn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sky_image"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="Phoenix mall"
+                android:textColor="@color/purple_500"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/seasons_butn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sky_image"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="Seasons mall"
+                android:textColor="@color/purple_500"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/wetandjoy_butn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sky_image"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="wet and joy park"
+                android:textColor="@color/purple_500"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="LoginProcess.Pataleshwar"
+    android:background="@drawable/plain_sky">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simple_back_icon"
+            app:tint="@color/black"
+            android:onClick="openPuneTemples"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Pataleshwar Mandir"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="218dp"
+            android:layout_marginHorizontal="40dp"
+            android:src="@drawable/pataleshwar" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Location     : "
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text=" 2 km from core city."
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="Price            : No entry Fee."
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="Timing         : 8.30 am to 6.30 pm"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/attraction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="Attraction   : "
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/attraction"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Pataleshwar Cave Temple is enshrined by Lord Pataleshwar - the God of the Underworld, who is a form of Lord Shiva."
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/pataleshwarTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/primary_color"
+            android:text="Plan my trip"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SignInProcess.OTPPage"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simple_cross_icon"
+            app:tint="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="openLoginScreen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO\nDE"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amaranth"
+            android:textSize="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/verification"
+            android:textSize="30dp"
+            android:fontFamily="@font/amaranth"
+            android:textAllCaps="true"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:text="@string/optmsg"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp">
+
+            <com.chaos.view.PinView
+                android:id="@+id/pin_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:itemCount="6"
+                app:itemWidth="50dp"
+                app:itemHeight="50dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:lineColor="@color/black"
+                android:itemBackground="@color/white"
+                style="@style/PinWidget.PinView"
+                android:inputType="number"
+                android:cursorVisible="true"
+                app:cursorColor="@color/black"
+                app:hideLineWhenFilled="true"
+                app:itemRadius="5dp"/>
+
+            <Button
+                android:id="@+id/verify_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/primary_color"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/verify"
+                android:textColor="@color/black"
+                android:onClick="openVerifiedPage"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="LoginProcess.CitySelector"
+    android:layout_margin="10dp"
+    android:background="@drawable/cityselector_image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simple_back_icon"
+            app:tint="@color/black"
+            android:onClick="openHomePage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:text="Please select Your Visited City !"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/pune_butn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="PUNE"
+                android:textSize="40dp"
+                android:fontFamily="@font/amaranth"
+                android:layout_margin="5dp"
+                android:background="@drawable/pune"
+                />
+
+            <Button
+                android:id="@+id/mumbai_butn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="MUMBAI"
+                android:textSize="40dp"
+                android:fontFamily="@font/amaranth"
+                android:layout_margin="5dp"
+                android:background="@drawable/mumbai"/>
+
+            <Button
+                android:id="@+id/goa_butn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="GOA"
+                android:textSize="40dp"
+                android:fontFamily="@font/amaranth"
+                android:layout_margin="5dp"
+                android:background="@drawable/goa"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
